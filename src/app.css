@@ -88,10 +88,14 @@ p {
   color: #5e5e5e;
 }
 
+.black {
+  color: black;
+}
+
 .default-margin {
   margin-left: 15vw;
-  margin-right: 20vw;
-  max-width: 950px;
+  margin-right: 15vw;
+  max-width: 1200px;
 }
 
 .underscore {

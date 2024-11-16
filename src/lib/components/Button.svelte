@@ -1,3 +1,17 @@
+<script lang="ts">
+  import type { Snippet } from "svelte";
+  interface ButtonProps {
+    children: Snippet;
+    onclick?: ((e: MouseEvent) => void) | (() => void);
+    className?: string;
+  }
+  let { children, onclick, className, ...props }: ButtonProps = $props();
+</script>
+
+<button class="btn mt-m {className}" {...props} {onclick}>
+  {@render children()}
+</button>
+
 <style>
   .btn {
     font-family: "Inter Tight", sans-serif;
