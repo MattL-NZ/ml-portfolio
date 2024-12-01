@@ -14,7 +14,7 @@
   <h1 class="dark-grey custom-underline">
     leading teams<span class="black no-underline">&nbsp;and creating</span>
   </h1>
-  <h1 class="dark-grey custom-underline">
+  <h1 class="dark-grey custom-underline mb-m">
     web<span class="black no-underline">&nbsp;and&nbsp;</span>mobile<span
       class="black no-underline">&nbsp;experiences.</span
     >

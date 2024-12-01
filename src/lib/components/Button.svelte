@@ -8,7 +8,7 @@
   let { children, onclick, className, ...props }: ButtonProps = $props();
 </script>
 
-<button class="btn mt-m {className}" {...props} {onclick}>
+<button class="btn {className}" {...props} {onclick}>
   {@render children()}
 </button>
 

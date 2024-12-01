@@ -1,8 +1,34 @@
+<script lang="ts">
+  import type { DevExperience } from "$cms/sanity.types";
+
+  interface ExperienceTableProps {
+    workExperience: DevExperience[];
+  }
+
+  const { workExperience }: ExperienceTableProps = $props();
+</script>
+
+<section class="default-margin work-experience mt-m">
+  <ul class="work-experience-list">
+    {#each workExperience as experience}
+      <li class="work-item">
+        <article>
+          <h3 class="semi-bold mb-xs">{experience.jobTitle}</h3>
+          <div class="company-and-date">
+            <p>{experience.company}</p>
+            <p class="dark-grey">{experience.dates}</p>
+          </div>
+        </article>
+      </li>
+    {/each}
+  </ul>
+  <h2 class="headline">Past Work <br /> Experiences</h2>
+</section>
+
 <style>
   .work-experience {
     display: flex;
     justify-content: space-between;
-    width: 100%;
   }
 
   .work-experience-list {
