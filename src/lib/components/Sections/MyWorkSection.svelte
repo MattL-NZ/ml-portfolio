@@ -1,3 +1,9 @@
+<script lang="ts">
+  let { projects }: { projects: ProcessedProject[] } = $props();
+</script>
+
+<h1>Hello</h1>
+
 <style>
   img {
     width: 100%;

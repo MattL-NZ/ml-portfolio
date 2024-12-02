@@ -1,8 +1,6 @@
 <script lang="ts">
-  import type { DevExperience } from "$cms/sanity.types";
-
   interface ExperienceTableProps {
-    workExperience: DevExperience[];
+    workExperience: SanityWorkExperience[];
   }
 
   const { workExperience }: ExperienceTableProps = $props();
